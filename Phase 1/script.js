@@ -470,3 +470,276 @@ let fahrenheit = (celsius * 9 / 5) + 32;
 console.log(`Temperature in Fahrenheit is ${fahrenheit}`);
 
 //5.Convert kilometers into meters.
+let kilometer = 5;
+
+let meter = kilometer * 1000;
+
+console.log(`${kilometer} km = ${meter} m`);
+
+//6.Calculate total marks and percentage of 5 subjects.
+
+let eng=90,maths=96,sci=93,hist=89,geog=94;
+
+let tmarks = eng+maths+hist+geog+sci;
+let percentage = (tmarks/500)*100;
+console.log(`total marks ${tmarks} marks in percentage is ${percentage}`);
+
+//7.Calculate electricity bill based on units consumed.
+
+let units=200,bill;
+
+if (units < 0) {
+    console.log("Invalid units");
+}
+else if(units <=100){
+    bill = units * 5;
+     console.log(bill);
+}
+else if ( units <= 200){
+    bill = units *7;
+     console.log(bill);
+}
+else{
+    bill =units*10;
+    console.log(bill);
+}
+
+//8.Create a username generator using first name and birth year.
+
+let userName="sheryians"
+let birthYear = 2020;
+console.log(`username = ${userName}${birthYear}`);
+
+//9.Check whether a string starts with a specific letter.
+
+console.log(firstName.startsWith("M"));
+
+//10.Count the total characters in a sentence excluding spaces.
+
+console.log(firstName.replaceAll(" ","").length);
+
+//Logical Thinking Questions
+
+// 1. Take two numbers and print which one is greater.
+
+if (a > b) {
+    console.log(`${a} is greater`);
+} else {
+    console.log(`${b} is greater`);
+}
+
+// 2. Check whether a number lies between 10 and 50.
+
+
+
+if (num >= 10 && num <= 50) {
+    console.log("Number lies between 10 and 50");
+} else {
+    console.log("Number does not lie between 10 and 50");
+}
+
+// 3. Check whether a password length is greater than 8.
+
+let passwords = "mypassword123";
+
+if (passwords.length > 8) {
+    console.log("Strong Password");
+} else {
+    console.log("Weak Password");
+}
+
+// 4. Check if a person can drive.
+
+
+let hasLicense = true;
+
+if (age > 18 && hasLicense) {
+    console.log("Can Drive");
+} else {
+    console.log("Cannot Drive");
+}
+
+// 5. Check whether a number is divisible by 2, 3, or both.
+
+let number = 12;
+
+if (number % 2 === 0 && number % 3 === 0) {
+    console.log("Divisible by both 2 and 3");
+} else if (number % 2 === 0) {
+    console.log("Divisible by 2");
+} else if (number % 3 === 0) {
+    console.log("Divisible by 3");
+} else {
+    console.log("Not divisible by 2 or 3");
+}
+
+// 6. Print greeting based on time.
+
+let hour = 16;
+
+if (hour < 12) {
+    console.log("Good Morning");
+} else if (hour < 17) {
+    console.log("Good Afternoon");
+} else {
+    console.log("Good Evening");
+}
+
+// 7. Find whether a number is a multiple of 10.
+
+let n = 50;
+
+if (n % 10 === 0) {
+    console.log("Multiple of 10");
+} else {
+    console.log("Not a multiple of 10");
+}
+
+// 8. Create a simple discount calculator.
+
+let price = 1000;
+let discount = 20;
+
+let discountAmount = (price * discount) / 100;
+let finalPrice = price - discountAmount;
+
+console.log(`Final price after discount: ${finalPrice}`);
+
+// 9. Check whether a product is in stock.
+
+let quantity = 5;
+
+if (quantity > 0) {
+    console.log("Product In Stock");
+} else {
+    console.log("Out of Stock");
+}
+
+// 10. Calculate final bill after GST.
+
+let billAmount = 1000;
+let gst = 18;
+
+let gstAmount = (billAmount * gst) / 100;
+let finalBill = billAmount + gstAmount;
+
+console.log(`Final Bill: ${finalBill}`);
+
+//Challenge Questions for Beginners
+
+//1.Generate a random OTP of 4 digits.
+
+console.log(`random 4 digi otp ${Math.floor(Math.random()*10000 +1)}`);
+
+//2.Reverse a 3-letter string manually.
+
+let str6= "cat";
+
+console.log(str6[2]+str6[1]+str6[0]);
+
+//3.Find the last character of a string.
+
+console.log(str4.length - 1,str4.length);
+
+//4.Convert a full name into uppercase initials.
+
+
+let words = str2.split(" ");
+
+let initials =
+    words[0][0].toUpperCase() +
+    words[1][0].toUpperCase() ;
+    
+console.log(initials);
+
+//5.Check whether two strings are equal ignoring case sensitivity.
+
+let str7 = "Hello";
+let str8 = "hello";
+
+if (str7.toLowerCase() === str8.toLowerCase()) {
+    console.log("Equal");
+} else {
+    console.log("Not Equal");
+}
+
+//6.Create a simple login validation system.
+
+let username2 = "admin";
+let password2= "1234";
+
+let correctUsername = "admin";
+let correctPassword = "1234";
+
+if (username2 === correctUsername && password2 === correctPassword) {
+    console.log("Login Successful");
+} else {
+    console.log("Login Failed");
+}
+
+//7.Find whether a number is a 2-digit or 3-digit number.
+
+let num4 = 123;
+
+if (num4 >= 10 && num4 <= 99) {
+    console.log("2-digit number");
+} else if (num4 >= 100 && num4 <= 999) {
+    console.log("3-digit number");
+}
+
+//8.Create a mini ATM balance checker.
+
+let balance = 5000;
+let withdrawAmount = 2000;
+
+if (withdrawAmount <= balance) {
+    balance = balance - withdrawAmount;
+    console.log(`Withdrawal Successful`);
+    console.log(`Remaining Balance: ₹${balance}`);
+} else {
+    console.log("Insufficient Balance");
+}
+
+//9.Simulate a traffic light system using switch.
+let light = "red";
+
+switch (light) {
+    case "red":
+        console.log("Stop");
+        break;
+
+    case "yellow":
+        console.log("Wait");
+        break;
+
+    case "green":
+        console.log("Go");
+        break;
+
+    default:
+        console.log("Invalid Signal");
+}
+
+//10.Build a small marksheet generator using variables and conditionals.
+
+let grade;
+
+if (percentage >= 90) {
+    grade = "A";
+} else if (percentage >= 75) {
+    grade = "B";
+} else if (percentage >= 50) {
+    grade = "C";
+} else {
+    grade = "Fail";
+}
+
+console.log("----- MARKSHEET -----");
+console.log(`English: ${eng}`);
+console.log(`Maths: ${maths}`);
+console.log(`Science: ${sci}`);
+console.log(`History: ${hist}`);
+console.log(`Geography: ${geog}`);
+console.log(`Total: ${tmarks}`);
+console.log(`Percentage: ${percentage}%`);
+console.log(`Grade: ${grade}`);
